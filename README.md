@@ -108,6 +108,7 @@ https://jian22446688.github.io/ele-layout-simple/demo/
 | overflow | ov--h | overflow:hidden |
 | overflow | ov--s | overflow:scroll |
 | overflow | ov--a | overflow:auto |
+| box-shadow | bs-n | box-shadow: none |
 
 ## common 文件
 
