@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/**
+* 溢出省略号
+* @param {Number} 行数
+*/
+/* BEM -------------------------- */
+/**
+* 真1px边框
+* {List}  多个方向边框, 默认值为bottom, 你可以根据需要传入(top, left, bottom, right) 4个方向
+* {Color} 边框的颜色, 默认#ccc
+* {List} 4个圆角半径, 默认0
+* {String} 一个高级设置, 一般都不需要改动, 由于细边框的实现使用了css的伪类, 所以为了规避可能出现的样式冲突, 我们可以自己指定使用:after还是:before, 默认after
+*/
+/**
+* 等边三角形
+* @param {String} 尺寸
+* @param {Color} 颜色
+* @param {String} 方向
+*/
+/* Color
+-------------------------- */
+/* 53a8ff */
+/* 66b1ff */
+/* 79bbff */
+/* 8cc5ff */
+/* a0cfff */
+/* b3d8ff */
+/* c6e2ff */
+/* d9ecff */
+/* ecf5ff */
+/* Border
+-------------------------- */
+/* Font Size
+-------------------------- */
+/* z-index
+-------------------------- */
+/* Size Lenght
+-------------------------- */
+.cc-bg-w {
+  background-color: #FFFFFF; }
+
+.cc-tc-w {
+  color: #FFFFFF; }
+
+.cc-bg-b {
+  background-color: #000000; }
+
+.cc-tc-b {
+  color: #000000; }
+
+.cc-bg-p {
+  background-color: #409EFF; }
+
+.cc-tc-p {
+  color: #409EFF; }
+
+.cc-bg-s {
+  background-color: #67C23A; }
+
+.cc-tc-s {
+  color: #67C23A; }
+
+.cc-bg-e {
+  background-color: #E6A23C; }
+
+.cc-tc-e {
+  color: #E6A23C; }
+
+.cc-bg-d {
+  background-color: #F56C6C; }
+
+.cc-tc-d {
+  color: #F56C6C; }
+
+.cc-bg-i {
+  background-color: #909399; }
+
+.cc-tc-i {
+  color: #909399; }
+
+.cc-bg-l1 {
+  background-color: #53a8ff; }
+
+.cc-tc-l1 {
+  color: #53a8ff; }
+
+.cc-bg-l2 {
+  background-color: #66b1ff; }
+
+.cc-tc-l2 {
+  color: #66b1ff; }
+
+.cc-bg-l3 {
+  background-color: #79bbff; }
+
+.cc-tc-l3 {
+  color: #79bbff; }
+
+.cc-bg-l4 {
+  background-color: #8cc5ff; }
+
+.cc-tc-l4 {
+  color: #8cc5ff; }
+
+.cc-bg-l5 {
+  background-color: #a0cfff; }
+
+.cc-tc-l5 {
+  color: #a0cfff; }
+
+.cc-bg-l6 {
+  background-color: #b3d8ff; }
+
+.cc-tc-l6 {
+  color: #b3d8ff; }
+
+.cc-bg-l7 {
+  background-color: #c6e2ff; }
+
+.cc-tc-l7 {
+  color: #c6e2ff; }
+
+.cc-bg-l8 {
+  background-color: #d9ecff; }
+
+.cc-tc-l8 {
+  color: #d9ecff; }
+
+.cc-bg-l9 {
+  background-color: #ecf5ff; }
+
+.cc-tc-l9 {
+  color: #ecf5ff; }
+
+.cc-bg-t1 {
+  background-color: #303133; }
+
+.cc-tc-t1 {
+  color: #303133; }
+
+.cc-bg-t2 {
+  background-color: #606266; }
+
+.cc-tc-t2 {
+  color: #606266; }
+
+.cc-bg-t3 {
+  background-color: #909399; }
+
+.cc-tc-t3 {
+  color: #909399; }
+
+.cc-bg-t4 {
+  background-color: #C0C4CC; }
+
+.cc-tc-t4 {
+  color: #C0C4CC; }

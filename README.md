@@ -1,13 +1,11 @@
 # 轻量级超级 css 工具
 > 借鉴element主题做的. 轻量级超级简单的 css 工具
 
-使用
+## 使用
+
 ```html
 <link rel="stylesheet" href="cc-css-tools.css">
 ```
-
-
-
 
 ## 另一个 layout 布局 css
 
@@ -15,8 +13,7 @@
 
 https://jian22446688.github.io/ele-layout-simple/demo/
 
-
-## 它的痛点
+## 解决痛点
 
 - 对于每一个div 我们都要写对应的css类。 这个在开发的过程中非常浪费时间，并且不好维护。
 
@@ -31,17 +28,16 @@ https://jian22446688.github.io/ele-layout-simple/demo/
 我们做了一个公共样式文件， 几乎所有高频的css都放进去了。
 
 真实的使用体验
-对于一般管控系统 比如基于element-ui ant-design 基本可以做到几乎不用写额外的样式 对于H5 css样式数量也几乎可以做到减少一半
-
+对于一般管控系统 比如基于element-ui 基本可以做到几乎不用写额外的样式 对于H5 css样式数量也几乎可以做到减少一半
 
 - 只需要引入一个公共文件 足够简单
 - 几乎每一个项目都能用到这些公共样式 使用足够高频
 - 自从用了它，可以早点下班啦！
 - 一次生成，到处复制。
+
 > 说有的 class 前缀都是 cc-***
 
-
-## size 文件
+## size
 
 | 属性名      | 简写名          | 说明      |
 |---------- |-------------- |---------- |
@@ -73,7 +69,7 @@ https://jian22446688.github.io/ele-layout-simple/demo/
 | border-radius | br-2 | -- |
 | border-radius | br-4 | -- |
 
-## other 文件
+## other
 
 | 属性名      | 简写名          | 说明      |
 |---------- |-------------- |---------- |
@@ -110,7 +106,7 @@ https://jian22446688.github.io/ele-layout-simple/demo/
 | overflow | ov--a | overflow:auto |
 | box-shadow | bs-n | box-shadow: none |
 
-## common 文件
+## common
 
 | 属性名      | 简写名          | 说明      |
 |---------- |-------------- |---------- |
@@ -122,8 +118,41 @@ https://jian22446688.github.io/ele-layout-simple/demo/
 | text-overflow | t-mr-2 | 文字显示2行 |
 | text-overflow | t-mr-3 | 文字显示3行 |
 
+## flex
 
-## color 文件
+| 属性名      | 简写名          | 说明      |
+|---------- |-------------- |---------- |
+| display: flex | flex | flex布局 |
+| flex | flex--1 | flex 大小 1-24 |
+| flex-direction: row | flex--r | 默认值: 主轴为水平方向，起点在左端 |
+| flex-direction: column | flex--c | 主轴为垂直方向，起点在上沿 |
+| flex-direction: row-reverse | flex--rr | 主轴为水平方向，起点在右端 |
+| flex-direction: column-reverse | flex--cr | 主轴为垂直方向，起点在下沿 |
+| flex-wrap: wrap |flex--wrap | 换行，第一行在上方 |
+| flex-wrap: nowrap |flex--nowrap | 默认: 不换行 |
+| align-self: flex-start |flex--asfs | 交叉轴的起点对齐 |
+| align-self: flex-end |flex--asfe | 交叉轴的终点对齐 |
+| align-self: center |flex--asc | 交叉轴的中点对齐 |
+| align-self: baseline |flex--asb | 项目的第一行文字的基线对齐 |
+| align-self: stretch |flex--ass | 默认: 如果项目未设置高度或设为auto，将占满整个容器的高度 |
+| align-items: flex-start |flex--aisfs | 交叉轴的起点对齐 |
+| align-items: flex-end |flex--aife | 交叉轴的终点对齐 |
+| align-items: center |flex--aic | 交叉轴的中点对齐 |
+| align-items: baseline |flex--aib | 项目的第一行文字的基线对齐 |
+| align-items: stretch |flex--ais | 默认: 如果项目未设置高度或设为auto，将占满整个容器的高度 |
+| align-content: flex-start |flex--aisfs | 与交叉轴的起点对齐 |
+| align-content: flex-end |flex--aife | 与交叉轴的终点对齐 |
+| align-content: center |flex--aic | 与交叉轴的中点对齐 |
+| align-content: space-between |flex--aib | 每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍 |
+| align-content: stretch |flex--ais | 默认值: 轴线占满整个交叉轴 |
+| align-content: space-around |flex--ais | 默认: 如果项目未设置高度或设为auto，将占满整个容器的高度 |
+| justify-content: flex-start |flex--jfs | 默认值: 左对齐 |
+| justify-content: flex-end |flex--jfe | 右对齐 |
+| justify-content: center |flex--jc | 居中 |
+| justify-content: space-between |flex--jsb | 两端对齐，项目之间的间隔都相等 |
+| justify-content: space-around |flex--jsa | 每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍 |
+
+## color
 
 | 属性名      | 简写名          | 说明      |
 |---------- |-------------- |---------- |

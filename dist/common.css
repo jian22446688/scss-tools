@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+* 溢出省略号
+* @param {Number} 行数
+*/
+/* BEM -------------------------- */
+/**
+* 真1px边框
+* {List}  多个方向边框, 默认值为bottom, 你可以根据需要传入(top, left, bottom, right) 4个方向
+* {Color} 边框的颜色, 默认#ccc
+* {List} 4个圆角半径, 默认0
+* {String} 一个高级设置, 一般都不需要改动, 由于细边框的实现使用了css的伪类, 所以为了规避可能出现的样式冲突, 我们可以自己指定使用:after还是:before, 默认after
+*/
+/**
+* 等边三角形
+* @param {String} 尺寸
+* @param {Color} 颜色
+* @param {String} 方向
+*/
+.cc-clearfix:before, .cc-clearfix:after {
+  content: "";
+  display: table; }
+
+.cc-clearfix:after {
+  clear: both; }
+
+.cc-float--left, .cc-float--right {
+  float: left; }
+
+.cc-t-no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.cc-t-mr-2 {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
+
+.cc-t-mr-3 {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.cc-tri-l {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: left left 0 left;
+  border-color: 10px transparent transparent transparent;
+  margin-bottom: 10px; }
+
+.cc-tri-r {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: right right 0 right;
+  border-color: 10px transparent transparent transparent;
+  margin-bottom: 10px; }
+
+.cc-tri-d {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: down down 0 down;
+  border-color: 10px transparent transparent transparent;
+  margin-bottom: 10px; }
+
+.cc-tri-u {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: up up 0 up;
+  border-color: 10px transparent transparent transparent;
+  margin-bottom: 10px; }

@@ -2,7 +2,6 @@
   "name": "cc-tools-simple",
   "version": "1.0.0",
   "description": "css工具库",
-  "main": "index.js",
   "scripts": {
     "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,10 +20,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ElementUI/theme-chalk.git"
+    "url": "git+https://github.com/jian22446688/scss-tools.git"
   },
   "bugs": {
-    "url": "https://github.com/ElementUI/theme-chalk/issues"
+    "url": "https://github.com/jian22446688/scss-tools/issues"
   },
   "author": "Cary",
   "license": "MIT"
