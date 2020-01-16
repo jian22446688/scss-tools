@@ -1,4 +1,5 @@
 # 轻量级超级 css 工具
+
 > 借鉴element主题做的. 轻量级超级简单的 css 工具
 
 ## 使用
@@ -35,7 +36,11 @@ https://jian22446688.github.io/ele-layout-simple/demo/
 - 自从用了它，可以早点下班啦！
 - 一次生成，到处复制。
 
-> 说有的 class 前缀都是 cc-***
+## 项目地址
+
+https://github.com/jian22446688/scss-tools
+
+> 所有的 class 前缀都是 cc-***
 
 ## size
 
