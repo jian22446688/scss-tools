@@ -21,7 +21,10 @@ $maincolor: (
   't1': $--color-text-primary,
   't2': $--color-text-regular,
   't3': $--color-text-secondary,
-  't4': $--color-text-placeholder
+  't4': $--color-text-placeholder,
+  '333': $--border-color-333,
+  '666': $--border-color-666,
+  '999': $--border-color-999
 );
 
 @each $key, $val in $maincolor {

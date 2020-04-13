@@ -105,3 +105,10 @@ $--flex-align-content: (
     }
   }
 }
+
+// 水平垂直居中
+@include b('vh-container') {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
