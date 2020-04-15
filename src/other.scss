@@ -27,6 +27,16 @@ $fontdecoration: (o: overline, l: line-through, u: underline, n: none);
 
 $overflowlist: (v: visible, h: hidden, s: scroll, a: auto);
 
+$borderBlack: (
+  d: #d7dae2,
+  b: $--color-black,
+  w: $--color-white,
+  i: $--color-info,
+  333: $--border-color-333,
+  666: $--border-color-666,
+  999: $--border-color-999,
+);
+
 // 禁止点击
 @include b('click--invalid') {
   pointer-events: none;
@@ -129,5 +139,15 @@ $overflowlist: (v: visible, h: hidden, s: scroll, a: auto);
     @include modifier-separator('', #{$key}) {
       overflow: $val;
     }
+  }
+}
+
+// 边框样式
+@each $key, $val in $borderBlack {
+  @include b('bo-' + $key) {
+    border: 1px solid $val;
+  }
+  @include b('bo2-' + $key) {
+    border: 2px solid $val;
   }
 }
