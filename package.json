@@ -3,14 +3,29 @@
   "version": "1.0.0",
   "description": "css工具库",
   "scripts": {
-    "build": "gulp build",
+    "dev": "webpack-dev-server --hot",
+    "build": "webpack",
+    "build:gulp": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "css-loader": "^6.5.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-cssmin": "^0.2.0",
-    "gulp-sass": "^4.0.2"
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.4.5",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "vue-router": "^3.5.3",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
   },
   "keywords": [
     "element",
