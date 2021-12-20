@@ -8,10 +8,11 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   mode: "development",
-  entry: ["./src/main.js", "./src/scss/index.scss", "./src/demo/styles/index.scss"], // string | object | array
+  entry: ["./src/main.js", "./src/scss/index.scss"], // string | object | array
   target: "web", // <=== 默认为 'web'，可省略
   devServer: {
     hot: true,
@@ -26,14 +27,15 @@ module.exports = {
     chunkFilename: '[name].[hash:8].js'
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: "css/[name].css", //css打包输出出口及文件名称
-      chunkFilename: "[id].css",
+     
+      filename: "css/cc-tools.css", //css打包输出出口及文件名称
     }),
     new VueLoaderPlugin()
   ],
@@ -50,7 +52,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.css$/,
