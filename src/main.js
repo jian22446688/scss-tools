@@ -7,7 +7,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import 'normalize.css/normalize.css' // a modern alternative to CSS resets
-import './demo/styles/index.scss'
+import './demo/styles/index.css'
 
 import router from './router/index'
 

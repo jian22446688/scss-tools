@@ -27,15 +27,15 @@ module.exports = {
     chunkFilename: '[name].[hash:8].js'
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       filename: "index.html",
     }),
     new MiniCssExtractPlugin({
-     
       filename: "css/cc-tools.css", //css打包输出出口及文件名称
+      chunkFilename: '[id].css'
     }),
     new VueLoaderPlugin()
   ],
