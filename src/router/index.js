@@ -14,7 +14,19 @@ Vue.use(Router)
 export const indexRoutes = [
   {
     path: '/',
+    name: 'index',
+    meta: {
+      title: '首页'
+    },
     component: () => import('../demo/pages/index.vue')
+  },
+  {
+    path: '/content',
+    name: 'content',
+    meta: {
+      title: '内容'
+    },
+    component: () => import('../demo/pages/content.vue')
   }
 ]
 

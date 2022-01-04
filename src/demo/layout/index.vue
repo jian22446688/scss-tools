@@ -9,44 +9,11 @@
       <div class="title cc-bg-p cc-h-40">CC-TOOLS 通用工具</div>
       <div class="menu-box">
         <ul>
-          <li class="active">首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          <li>首页测试</li>
-          
+          <li
+            v-for="(item, ix) in menList"
+            :key="item.path"
+            :class="{ 'active': isActiveMenu(item) }"
+            @click="hanldeToPage(item)">{{ item.meta.title || '暂无标题' }}</li>
         </ul>
       </div>
     </div>
@@ -61,14 +28,28 @@ import { indexRoutes } from '../../router/index'
 export default {
   data() {
     return {
+      menList: []
+    }
+  },
+  computed: {
+    isActiveMenu() {
+      return (item) => {
+        return this.$route.path === item.path
+      }
     }
   },
   created() {
+    this.menList = indexRoutes
   },
-  mounted() {
-  },
+
   methods: {
-  },
+    hanldeToPage(item) {
+      if(this.isActiveMenu(item)) return
+      this.$router.push({
+        path: item.path
+      })
+    }
+  }
 }
 </script>
 
